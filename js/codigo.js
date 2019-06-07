@@ -39,6 +39,27 @@ $(document).ready(function(){
 	});
 // Fin ventana flotante realidad aumentada//
 
+
+// ventana Katherine video//
+	$('.vide').hide();
+
+	$('.video1').on('click', function(){
+		$('.vide').slideToggle(1000);
+	});
+	
+	
+// FIN ventana  video//
+
+// ventana Esther video//
+	$('.vider').hide();
+
+	$('.video2').on('click', function(){
+		$('.vider').slideToggle(1000);
+	});
+	
+	
+// FIN ventana Esther video//
+
 //seccion dos//
 
 	$('.textoDos').on('click', function(){
