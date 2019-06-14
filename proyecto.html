@@ -11,16 +11,20 @@
 	<title>Proyecto</title>
 </head>
 <body>
-	<div class="lienzo">
+	<section class="lienzo">
+
 		<section id="Uno" class="uno cont">
+
+			
 			<div id="video">
 				<video controls>
-					<source src="img/Final_5.mp4" type="video/mp4">
+					<source src="img/finalVideo.mp4" type="video/mp4">
 					</video>
 				</div>
+		
 
 				<!-- Ventana flotante Realidad aumentada -->
-
+       
 				<div class="realidad">
 					<i class="x fas fa-times"></i>
 					<div class="imagen medida">
@@ -28,10 +32,12 @@
 						<i class="fas fa-sunset"></i>
 					</div>
 					<div class="instruccion medida"><br>
-						<h3>INSTRUCCIONES</h3><br>
-						<p>Deberás hacer que el texto sea breve y fácil de entender, ya sea que expliques por primera vez el juego que has creado o alguien más lo explique con el reglamento que elabores.</p>
+						<h2>INSTRUCCIONES</h2>
+						<p>1. Da click sobre el botón<br>
+						<br>2. Abre la apk y enfoca el logo de nadarte <br>
+						<br>3. Disfruta de nuestra realidad aumentanda</p>
 
-						<i class="descarga fas fa-download"></i>
+						<img src="img/197070.png">
 					</div>
 					
 				</div>
@@ -45,7 +51,8 @@
 			<i class=" pasar fas fa-angle-double-right"></i>
 			
 			<i class=" devolber fas fa-angle-double-left"></i>	
-		</section>
+			</section>
+		
 		<section id="Dos" class="dos cont">
 			<div class="cubo2">
 				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -74,18 +81,33 @@
 								<p>Benjamín Franklin viajo a la ciudad de Londres,<br> al llegar allí fue al rio Támesis en donde él realizó<br> una serie de ejercicios,como parte de su exhibición,<br> Benjamín logró con esta exhibición llamar la atención<br> de los espectadores, en esta exhibición la natación<br> sincronizada se dio a conocer como "natación ornamental".<br>
 								Benjamín Franklin es considerado como uno de los <br>fundadores de la natación sincronizada ya que el<br> impulsó a las personas a que practicaran este<br> deporte ya sea para que obtuvieran beneficios <br>para la salud o por interés.</p>
 							</div>
+
+							<div>
+							<video class="viderr" controls>
+								<source src="Video/benjamin.mp4" type="video/mp4">
+							</video>
+						</div>
+
 						<div class="btn_sec2">
-							<i class="audio fas fa-ad"></i>
+							<i class="video4 fas fa-ad"></i>
 							<i class="textoDos fas fa-receipt"></i>
 						</div>
 						</div>
+						
 
 						<div class="carousel-item " style="height: 100vh">
+							<div class="btn-jugar">
+								<a href="juego/index.html" target="blank"><img src="img/boton azul.png"></a>
+							</div>
+							
+						
 							<img class="d-block img-fluid" src="img/escenario2.jpg" alt="Second slide">
 						</div>
 
+						
+
 						<div class="carousel-item " style="height: 100vh">
-							<img class="d-block img-fluid" src="img/esceanrio3.jpg" alt="Three slide">
+							<!-- <img class="d-block img-fluid" src="img/esceanrio3.jpg" alt="Three slide"> -->
 							<div class="textTres">
 								<i class="x fas fa-times-circle"></i>
 								<h1 class="titulo">1933-1934</h1>
@@ -102,8 +124,15 @@
 						</div>
 						<div class="btn_sec2">
 
+							
+
 							<i class="video1 fas fa-ad"></i>
 							<i class="textoTres fas fa-receipt"></i>
+						</div>
+						<div class="fondo1" data-vide-bg="Video/katerine" data-vide-options="position: 0% 0%">
+							<!-- <video class="fondo1">
+								<source src="Video/katerine.mp4" type="video/mp4">
+							</video> -->
 						</div>
 						</div>
 						<div class="carousel-item " style="height: 100vh">
@@ -124,9 +153,9 @@
 						</div>
 							<div>
 							<video class="vider" controls>
-								<source src="Video/video1.mp4" type="video/mp4">
+								<source src="Video/estherFinal.mp4" type="video/mp4">
 							</video>
-						</div>
+							</div>
 						<div class="btn_sec2">
 							
 							<i class="video2 fas fa-ad"></i>
@@ -148,10 +177,16 @@
 							</br>
 							
 						</div>
+						<video controls class="videoSec5">
+							<source src="Video/Esther.mp4" type="video/mp4">
+						</video>
 						<div class="btn_sec2">
-							<i class="fas fa-ad"></i>
+							<i class="video5 fas fa-ad"></i>
 							<i class="textoCinco fas fa-receipt"></i>
 						</div>
+
+						
+
 						</div>
 						<div class="carousel-item " style="height: 100vh">
 							<img class="d-block img-fluid" src="img/escenario6.jpg" alt="six slide">
@@ -165,23 +200,32 @@
 							</br>
 							
 						</div>
+
+						<div>
+							<video class="videro" controls>
+								<source src="Video/benoitBillmay.mp4" type="video/mp4">
+							</video>
+							</div>
 						<div class="btn_sec2">
-							<i class="fas fa-ad"></i>
+							<i class="video3 fas fa-ad"></i>
 							<i class="textoSeis fas fa-receipt"></i>
 						</div>
 						</div>
 					 </div>
 					</div>
-				</div>
 			</section>
+		</section>
 	
 	<script src="js/jquery.min.js"></script>
+	
 	<script src="js/jquery.easing.min.js"></script>
 	
 	<script src="js/jquery.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="js/codigo.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/jquery.vide.js"></script>
+	
 	
 
 	
