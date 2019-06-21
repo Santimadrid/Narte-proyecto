@@ -29,12 +29,12 @@ h2{
 	font-family: abel;
 }
 body{
-	overflow-y: hidden;
+	
 }
 .lienzo{
 	width: 200%;
-	height: 100vh; 
-	background:white;
+	height: 100vh;
+	background: white;
 	display: flex;
 }
 .logo{
@@ -44,6 +44,7 @@ body{
 	height: 700px;
 }
 .cont{
+	flex-basis: 50%;
 	float: left;
 	height: 100vh;
 	width: 100%;
@@ -95,19 +96,7 @@ body{
 	float: left;
 }
 
-.carousel-indicators li {
-    position: relative;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    border-radius: 5px;
-    width: 33px;
-    height: 8px;
-    margin-right: 7px;
-    margin-left: 4px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: rgba(255,255,255,.5);
-}
+
 
 .pasar{
     position: fixed;
@@ -130,6 +119,8 @@ body{
 
 .dos{
 	position: relative;
+	display: flex;
+	flex-direction: column;
 }
 
 .btns{
@@ -316,14 +307,8 @@ p {
     margin-top: 20px;
     margin-bottom: 1rem;
 }
-#video, video{
-	width: 100%;
-	height: 100vh;
-}
-#video2, video{
-	width: 100%;
-	height: 100vh;
-}
+
+
 .iconki{
     position: absolute;
     right: 0px;
@@ -354,10 +339,7 @@ p {
 	box-shadow: 2px 2px 5px #999; 
 }*/
 
-.fondo1 video{
-	width: 104%;
-	height: 800px;
-}
+
 /*.fondo2 video{
 	width: 104%;
 	height: 800px;
@@ -379,14 +361,14 @@ p {
 	box-shadow: 2px 2px 5px #999; 
 }
 
-.viderr{
+.viderr video{
 	z-index: 999;
 	position: absolute;
-	width: 600px;
-	height: 450px;
+	width: 1000px;
+	height: 300px;
 	left: 0px;
 	right: 0;
-	top: 100px;
+	top: 50px;
 	text-align: center;
 	box-shadow: 2px 2px 5px #999; 
 }
@@ -487,18 +469,16 @@ p {
 /*nube*/
 
 .nube{
-	
-	background-size: 100% 100%;
 	position: absolute;	
 	top: 20px;
-	z-index: 999;
-
+	z-index: 999;	
 }
 
 .nube:nth-child(2) {
 	width: 295px;
 	height: 60px;
-	margin-top: 10px;
+	position: absolute;
+	top: 10px;
 	background: url(../img/nube2.png);
 	animation: movimiento2 40s infinite;
 }
@@ -506,7 +486,8 @@ p {
 .nube:nth-child(3) {
 	width: 211px;
 	height: 43px;
-	margin-top: 100px;
+	position: absolute;
+	top: 100px;
 	background: url(../img/nube3.png);
 	animation: movimiento2 50s infinite;
 }
@@ -514,22 +495,35 @@ p {
 .nube:nth-child(4) {
 	width: 211px;
 	height: 43px;
-	margin-top: 190px;
+	position: absolute;
+	top: 190px;
 	background: url(../img/nube4.png);
 	animation: movimiento1 50s infinite;
 }
 
 
 
-@keyframes movimiento1 {
-	from { margin-left: 100%;}
-	to {margin-left: -30%;}
+@keyframes movimiento1{
+	0%{
+		left: 100%;
+	}
+
+	100%{
+		left: -30%;
+	}
 }
 
-@keyframes movimiento2 {
-	from {margin-left: -30%;}
-	to {margin-left: 100%;}
+@keyframes movimiento2{
+	0%{
+		left: -30%;
+	}
+
+	100%{
+		left: 100%;
+	}
 }
+
+
 
 /*nube escenario4*/
 
@@ -568,13 +562,13 @@ p {
 
 
 @keyframes movimiento1 {
-	from { margin-left: 100%;}
-	to {margin-left: -30%;}
+	from {left: 100%;}
+	to {left: -30%;}
 }
 
 @keyframes movimiento2 {
-	from {margin-left: -30%;}
-	to {margin-left: 100%;}
+	from {left: -30%;}
+	to {left: 100%;}
 }
 
 
@@ -607,18 +601,52 @@ p {
 
 
 @keyframes movimiento1 {
-	from { margin-left: 100%;}
-	to {margin-left: -30%;}
+	from {left: 100%;}
+	to {left: -30%;}
 }
 
 @keyframes movimiento2 {
-	from {margin-left: -30%;}
-	to {margin-left: 100%;}
+	from {left: -30%;}
+	to {left: 100%;}
 }
 
 
+.sec1{
+	width: 100%;
 
+}
 
+.menu-slider{
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 20px;
+	display: flex;
+	padding: 0 500px;
+	z-index: 10;
+}
+
+.menu-slider li{
+	width: 30px;
+	height: 10px;
+	background: white;
+	list-style: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.vid video{
+	width: 100%;
+	height: 128vh;
+}
+.videoFinal video{
+	width: 100%;
+	height: 100vh;
+}
+
+.active{
+	transform: scale(.7);
+}
 
 
 
