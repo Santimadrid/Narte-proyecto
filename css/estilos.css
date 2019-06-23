@@ -318,17 +318,19 @@ p {
     cursor: pointer; 
 }
 
-.vide{
+#vide video{
 	z-index: 999;
 	position: absolute;
-	width: 600px;
-	height: 450px;
-	left: 0px;
+	width: 571px;
+	height: 428px;
 	right: 0;
-	top: 100px;
+	left: 0;
+	top: 70px;
 	text-align: center;
 	box-shadow: 2px 2px 5px #999; 
 }
+
+
 /*.fondo1{
 	z-index: 999;
 	position: absolute;
@@ -349,37 +351,44 @@ p {
 	width: 100%;
 	height: 800px;
 }*/
-.vider{
+#vider video{
 	z-index: 999;
 	position: absolute;
-	width: 600px;
-	height: 450px;
-	left: 0px;
+	width: 571px;
+	height: 428px;
+	left: 0;
 	right: 0;
-	top: 100px;
+	top: 70px;
 	text-align: center;
 	box-shadow: 2px 2px 5px #999; 
 }
-
 .viderr video{
 	z-index: 999;
 	position: absolute;
-	width: 1000px;
-	height: 300px;
-	left: 0px;
+	width: 571px;
+	height: 428px;
+	left: 0;
 	right: 0;
-	top: 50px;
-	text-align: center;
+	top: 70px;
 	box-shadow: 2px 2px 5px #999; 
 }
-.videro{
+.cerrarVideo{
+	position: absolute;
+	z-index: 1000;
+	top: 77px;
+	right: 410px;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+#videro video{
 	z-index: 999;
 	position: absolute;
-	width: 600px;
-	height: 450px;
-	left: 0px;
+	width: 571px;
+	height: 428px;
+	left: 0;
 	right: 0;
-	top: 100px;
+	top: 70px;
 	text-align: center;
 	box-shadow: 2px 2px 5px #999; 
 }
@@ -464,150 +473,6 @@ p {
 	position: absolute;
 	top: 0;
 	display: none;
-}
-
-/*nube*/
-
-.nube{
-	position: absolute;	
-	top: 20px;
-	z-index: 999;	
-}
-
-.nube:nth-child(2) {
-	width: 295px;
-	height: 60px;
-	position: absolute;
-	top: 10px;
-	background: url(../img/nube2.png);
-	animation: movimiento2 40s infinite;
-}
-
-.nube:nth-child(3) {
-	width: 211px;
-	height: 43px;
-	position: absolute;
-	top: 100px;
-	background: url(../img/nube3.png);
-	animation: movimiento2 50s infinite;
-}
-
-.nube:nth-child(4) {
-	width: 211px;
-	height: 43px;
-	position: absolute;
-	top: 190px;
-	background: url(../img/nube4.png);
-	animation: movimiento1 50s infinite;
-}
-
-
-
-@keyframes movimiento1{
-	0%{
-		left: 100%;
-	}
-
-	100%{
-		left: -30%;
-	}
-}
-
-@keyframes movimiento2{
-	0%{
-		left: -30%;
-	}
-
-	100%{
-		left: 100%;
-	}
-}
-
-
-
-/*nube escenario4*/
-
-.nube1{
-	background-size: 100% 100%;
-	position: absolute;	
-	top: 20px;
-	z-index: 999;
-
-}
-
-.nube1:nth-child(2) {
-	width: 121px;
-	height: 24px;
-	margin-top: 10px;
-	background: url(../img/nube200.png);
-	animation: movimiento2 40s infinite;
-}
-
-.nube1:nth-child(3) {
-	width: 124px;
-	height: 25px;
-	margin-top: 100px;
-	background: url(../img/nube300.png);
-	animation: movimiento2 50s infinite;
-}
-
-.nube1:nth-child(4) {
-	width: 109px;
-	height: 22px;
-	margin-top: 55px;
-	background: url(../img/nube400.png);
-	animation: movimiento1 50s infinite;
-}
-
-
-
-@keyframes movimiento1 {
-	from {left: 100%;}
-	to {left: -30%;}
-}
-
-@keyframes movimiento2 {
-	from {left: -30%;}
-	to {left: 100%;}
-}
-
-
-/*nube escenario5*/
-
-.nube2{
-	background-size: 100% 100%;
-	position: absolute;	
-	top: 20px;
-	z-index: 999;
-
-}
-
-.nube2:nth-child(2) {
-	width: 121px;
-	height: 24px;
-	margin-top: 0px;
-	background: url(../img/nube200.png);
-	animation: movimiento2 40s infinite;
-}
-
-.nube2:nth-child(4) {
-	width: 109px;
-	height: 22px;
-	margin-top: 40px;
-	background: url(../img/nube400.png);
-	animation: movimiento1 50s infinite;
-}
-
-
-
-@keyframes movimiento1 {
-	from {left: 100%;}
-	to {left: -30%;}
-}
-
-@keyframes movimiento2 {
-	from {left: -30%;}
-	to {left: 100%;}
 }
 
 

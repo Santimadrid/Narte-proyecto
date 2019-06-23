@@ -55,7 +55,7 @@ $(document).ready(function(){
 			$('.pasar').css("display", "block");
 		}
 		
-		console.log(posicion)
+		/*console.log(posicion)*/
 	}
 
 	
@@ -89,10 +89,12 @@ $(document).ready(function(){
 	$('.viderr').hide();
 
 	$('.video4').on('click', function(){
-		$('.viderr').slideToggle(1000);
+		$('.viderr').show('slow');
 	});
 
-	
+	$('.cerrarVideo').on('click', function(){
+		$('.viderr').hide('fast');
+	});
 // FIN ventana benjamin video//
 
 // ventana Ether video//
@@ -106,38 +108,41 @@ $(document).ready(function(){
 // FIN ventana Enther video//
 
 // ventana Katherine video//
-	$('.vide').hide();
+	$('#vide').hide();
 
 	$('.video1').on('click', function(){
-		$('.vide').slideToggle(1000);
+		$('#vide').show('slow');
 	});
 
-	$('video1').on('click', function(){
-		$('.vide');
-	})
-	
-	
+	$('.cerrarVideo').on('click', function(){
+		$('#vide').hide('fast');
+	});
 // FIN ventana  video//
 
 // ventana Esther video//
-	$('.vider').hide();
+	$('#vider').hide();
 
 	$('.video2').on('click', function(){
-		$('.vider').slideToggle(1000);
+		$('#vider').show('slow');
 	});
-	
-	
+
+	$('.cerrarVideo').on('click', function(){
+		$('#vider').hide('fast');
+	});
 // FIN ventana Esther video//
 
 
 // ventana benoit video//
-	$('.videro').hide();
+
+	$('#videro').hide();
 
 	$('.video3').on('click', function(){
-		$('.videro').slideToggle(1000);
+		$('#videro').show('slow');
 	});
-	
-	
+
+	$('.cerrarVideo').on('click', function(){
+		$('#videro').hide('fast');
+	});
 // FIN ventana benoit video//
 
 //seccion dos//
