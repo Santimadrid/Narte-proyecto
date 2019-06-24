@@ -455,6 +455,24 @@ p {
 .btn_sec2 i:hover{
 	color: #1B9CFC;
 }
+.btn_sec3{
+	font-size: 1em; 
+	position: absolute;
+	left: 100px;
+	bottom: 30px;
+}
+.btn_sec3 i{
+	color: black;
+    margin: 3px 8px;
+    transition: 0.1s linear;
+    background: #f5f6fa;
+    padding: 8px;
+    border-radius: 100%;
+    font-size: 2.5em;
+}
+.btn_sec3 i:hover{
+	color: #1B9CFC;
+}
 .titulo{
 	font-size: 2em;
 	text-align: center;
@@ -509,8 +527,19 @@ p {
 	height: 100vh;
 }
 
+
 .active{
-	transform: scale(.7);
+	transform: scale(1.4);
+}
+.circulo{
+	position: relative;
+}
+.cuadro{
+    position: absolute;
+    bottom: 10px;
+    left: -2px;
+    font-size: 15px;
+    color: black;
 }
 
 
